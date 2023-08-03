@@ -12,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "copy-webpack-plugin": "^10.2.0",
-    "css-loader": "^7.5.1",
+    "css-loader": "^6.8.1",
     "file-loader": "^10.2.0",
     "html-webpack-plugin": "^7.5.3",
     "style-loader": "^5.3.1",
