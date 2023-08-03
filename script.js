@@ -29,9 +29,9 @@ function redirectToGitHub() {
   window.location.href = "https://github.com/AaravJuneja";
 }
 
-// Function to redirect to email address (replace with actual email address)
+// Function to redirect to email address
 function redirectToEmail() {
-  window.location.href = "mailto:example@example.com";
+  window.location.href = "mailto:aarav.juneja2044@gmail.com";
 }
 
 // Add smooth scroll functionality to navigation links
