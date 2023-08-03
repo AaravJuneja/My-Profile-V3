@@ -173,7 +173,7 @@ a:hover {
 }
 
 .github-button {
-  animation: expandContract 1s infinite alternate;
+  animation: expandContract 0.5s infinite alternate;
 }
 
 @keyframes expandContract {
