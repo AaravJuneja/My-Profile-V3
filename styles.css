@@ -1,0 +1,225 @@
+:root {
+  --background-gradient: linear-gradient(to bottom, #f1f2f6, #dfe4ea);
+  --glass-opacity: 0.9;
+  --blur-strength: 5px;
+  --glass-color: rgba(255, 255, 255, 0.1);
+  --header-bg-color: rgba(255, 255, 255, 0.9);
+  --nav-bg-color: rgba(255, 255, 255, 0.9);
+  --nav-link-color: #333;
+  --nav-link-hover-color: #555;
+  --section-bg-color: rgba(255, 255, 255, 0.9);
+  --section-text-color: #fff;
+  --button-bg-color: #6c63ff;
+  --button-hover-bg-color: #574fe0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--background-gradient);
+}
+
+.glassy {
+  background-color: var(--glass-color);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(var(--blur-strength));
+  opacity: var(--glass-opacity);
+}
+
+header {
+  background-color: var(--header-bg-color);
+  color: var(--nav-link-color);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+nav {
+  background-color: var(--nav-bg-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  color: var(--nav-link-hover-color);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+main {
+  padding: 20px;
+}
+
+.section-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0);
+  color: var(--section-text-color);
+  background-color: var(--section-bg-color);
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+#home::before,
+#about::before,
+#skills::before,
+#contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  filter: blur(var(--blur-strength));
+  opacity: var(--glass-opacity);
+  z-index: -1;
+}
+
+#home {
+  background-image: url("background1.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+
+#about {
+  background-image: url("background2.jpeg");
+  background-size: cover;
+  background-position: top center;
+}
+
+#skills {
+  background-image: url("background3.png");
+  background-size: cover;
+  background-position: top center;
+}
+
+#contact {
+  background-image: url("background4.jpeg");
+  background-size: cover;
+  background-position: top center;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button,
+a {
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--button-bg-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  backdrop-filter: blur(0);
+}
+
+button:hover,
+a:hover {
+  background-color: var(--button-hover-bg-color);
+  transform: scale(1.1);
+}
+
+.github-button {
+  animation: expandContract 1s infinite alternate;
+}
+
+@keyframes expandContract {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes bounceButton1 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+}
+
+@keyframes bounceButton2 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -15px);
+  }
+}
+
+@keyframes bounceButton3 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -20px);
+  }
+}
+
+.button-container a:nth-child(4) {
+  animation: bounceButton1 1s infinite alternate;
+}
+
+.button-container a:nth-child(5) {
+  animation: bounceButton2 1s infinite alternate;
+}
+
+.button-container a:nth-child(6) {
+  animation: bounceButton3 1s infinite alternate;
+}
