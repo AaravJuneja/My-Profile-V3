@@ -11,12 +11,12 @@
   "author": "Aarav Juneja",
   "license": "ISC",
   "devDependencies": {
-    "copy-webpack-plugin": "^10.2.0",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
-    "file-loader": "^10.2.0",
-    "html-webpack-plugin": "^7.5.3",
-    "style-loader": "^5.3.1",
-    "webpack": "^7.55.1",
-    "webpack-cli": "^6.8.0"
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   }
 }
