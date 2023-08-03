@@ -71,7 +71,7 @@ nav a {
 
 nav a:hover {
   color: var(--nav-link-hover-color);
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 166, 0);
 }
 
 main {
@@ -145,6 +145,7 @@ button:hover,
 a:hover {
   background-color: var(--button-hover-bg-color);
   transform: scale(1.1);
+  opacity: 1;
 }
 
 .github-button {
