@@ -10,7 +10,7 @@
   --section-bg-color: rgba(255, 255, 255, 0.3);
   --section-text-color: #000;
   --button-bg-color: rgb(255, 166, 0);
-  --button-hover-bg-color: rgba(255, 165, 0, 0.7);
+  --button-hover-bg-color: rgb(255, 166, 0);
   --connect-button-bg-color: transparent;
 }
 
@@ -39,7 +39,6 @@ header {
   padding: 20px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -49,7 +48,6 @@ nav {
   padding: 15px 0;
   display: flex;
   justify-content: center;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
