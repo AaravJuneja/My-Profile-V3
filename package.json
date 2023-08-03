@@ -1,7 +1,7 @@
 {
   "name": "my-profile-v3",
   "version": "1.0.0",
-  "description": "A description of your project",
+  "description": "Go check out the website...",
   "main": "build/script.js",
   "scripts": {
     "build": "webpack",
