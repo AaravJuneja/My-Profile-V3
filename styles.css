@@ -17,7 +17,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Bahnschrift", "Helvetica Neue", Arial, sans-serif;
   background-image: url("background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,12 +40,14 @@ header {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  font-size:larger;
 }
 
 nav {
   background-color: var(--nav-bg-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
   padding: 15px 0;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   top: 0;
@@ -74,6 +76,7 @@ nav a {
   border-radius: 5px;
   background-color: transparent;
   position: relative;
+  font-weight: bold;
 }
 
 nav a:hover {
@@ -107,7 +110,7 @@ main {
   max-width: 800px;
   margin: 30px auto;
   padding: 30px;
-  border-radius: 20px; 
+  border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 16px 32px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   color: var(--section-text-color);
@@ -136,10 +139,12 @@ main {
 .main-header {
   color: rgba(255, 255, 255, 1);
   margin-bottom: 20px;
+  font-size: 30px;
 }
 
 .main-paragraph {
   color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
 }
 
 .button-container {
@@ -164,6 +169,7 @@ main {
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
   backdrop-filter: blur(20px);
+  font-weight: bold;
 }
 
 .button-container button:hover,
