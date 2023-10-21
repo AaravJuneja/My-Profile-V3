@@ -46,3 +46,27 @@ navLinks.forEach((link) => {
 
 // Call the function to update the welcome text
 updateWelcomeText();
+
+// Function to reveal sections on scroll
+function revealSections() {
+  const sections = document.querySelectorAll('.section-container');
+  sections.forEach((section) => {
+    if (isElementInViewport(section)) {
+      section.classList.add('active');
+    }
+  });
+}
+
+// Add an event listener for scrolling
+window.addEventListener('scroll', revealSections);
+
+// Check if an element is in the viewport
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
