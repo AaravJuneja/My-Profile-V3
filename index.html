@@ -10,11 +10,12 @@
     <h1>My Profile</h1>
   </header>
 
-  <nav class="glassy">
+  <nav class="navigation glassy">
     <ul>
       <li><a href="#home"><i class="fas fa-user"></i> Home</a></li>
       <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
       <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
     </ul>
   </nav>
 
@@ -22,20 +23,28 @@
     <section id="home" class="section-container glassy">
       <h2 class="main-header">Welcome to My Profile</h2>
       <p class="main-paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non justo non erat posuere rhoncus. Proin non suscipit sapien. Cras nec facilisis libero. Aliquam erat volutpat. Sed in luctus purus, a sollicitudin turpis. Morbi id quam quis orci tincidunt condimentum. Vestibulum vulputate, turpis ut semper consectetur, nunc mi aliquet odio, vel iaculis libero dolor ut nisl. Sed ut viverra massa. Donec auctor velit id malesuada. Fusce tristique, justo eget sollicitudin tristique, ex ligula volutpat dolor.
+        Hello! My name is Aarav Juneja, and I study in Class 9 J at Amity International School, Sector 46, Gurgaon. Elit telam ardentem sum cum amore coding.
       </p>
     </section>    
 
     <section id="about" class="section-container glassy">
       <h2 class="main-header">About Me</h2>
       <p class="main-paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non justo non erat posuere rhoncus. Proin non suscipit sapien. Cras nec facilisis libero. Aliquam erat volutpat. Sed in luctus purus, a sollicitudin turpis. Morbi id quam quis orci tincidunt condimentum. Vestibulum vulputate, turpis ut semper consectetur, nunc mi aliquet odio, vel iaculis libero dolor ut nisl. Sed ut viverra massa. Donec auctor velit id malesuada. Fusce tristique, justo eget sollicitudin tristique, ex ligula volutpat dolor.
+        Ever since I started coding, I've been fully immersed in the world of web development and technology. My journey as a developer started with HTML and CSS, and I quickly dived into JavaScript to make my websites dynamic and interactive.
+
+        With a strong passion for creating engaging digital experiences, I've explored various frameworks like React and server-side technologies like Node.js. I'm always eager to learn and keep myself updated with the latest trends in web development.
+
+        Graphic design is another area that captivates me, as it allows me to create visually appealing websites that deliver a delightful user experience.
+
+        When I'm not coding or designing, you can find me reading tech blogs, playing basketball, or exploring nature with my camera in hand. I believe that a well-rounded life fuels creativity and problem-solving skills.
+
+        I'm excited to continue my journey as a web developer and take on challenging projects that push me to new heights. If you're interested in collaborating or just want to chat about web development, feel free to connect with me through any of the contact options below. Let's create something amazing together!
       </p>
     </section>
 
     <section id="skills" class="section-container glassy">
       <h2 class="main-header">Skills</h2>
-      <ul class="skill-list">
+      <ul class="main-paragraph">
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
@@ -43,22 +52,30 @@
         <li>Node.js</li>
       </ul>
     </section>
+
+    <section id="contact" class="section-container glassy">
+      <h2 class="main-header">Connect with Me</h2>
+      <div class="button-container">
+        <button id="discord-button" onclick="showDiscordUsername()">
+          <i class="fab fa-discord"></i>
+        </button>
+        <a href="https://www.instagram.com/aj_anonymous09" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <button class="github-button" onclick="redirectToGitHub()">
+          <i class="fab fa-github"></i>
+        </button>
+        <button class="email-button" onclick="redirectToEmail()">
+          <i class="far fa-envelope"></i>
+        </button>
+      </div>
+    </section>
   </main>
 
   <footer class="glassy">
-    <div class="footer-content">
-      <div class="social-icons">
-        <a class="social-link" href="https://www.instagram.com/aj_anonymous09" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-instagram"></i> Instagram
-        </a>
-        <a class="social-link" href="https://github.com/AaravJuneja" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-        <a class="social-link" href="https://discord.com" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-discord"></i> notaarav09
-        </a>
-      </div>
-    </div>
+    <p>&copy; 2023. Aarav Juneja. Portfolio Website.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
-</html>
+</html> 
